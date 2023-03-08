@@ -575,7 +575,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
                 else:
                     await query.answer(f"⚠️  {query.from_user.first_name}, മറ്റുള്ളവർ റിക്വസ്റ്റ് ചെയ്ത മുവിയിൽ കുത്തി നോക്കാതെ. Broo വേണ്ടത് Broo റിക്വസ്റ്റ് ചെയ്യുക🤒.\n\n❕ Broo, Search Your Own File.Don't Click Others Request File's ❕", show_alert=True)
-                await query.answer('{query.from_user.first_name} നിന്റെ Files ഞാൻ' pmമിൽ അയിചിട്ടുണ്ട്🌿.\n\n👋Hᴀɪ Bʀᴏᴏ Yᴏᴜʀ Fɪʟᴇs Aʀᴇ Sᴇɴᴛᴇᴅ Pm (Pᴇʀsᴏɴᴀʟʟʏ) Cʜᴇᴄʜ Iᴛ 🌿, show_alert=True)
+                await query.answer('Bʀᴏᴏ Files ഞാൻ pmമിൽ അയിചിട്ടുണ്ട്🌿.\n\n👋Hᴀɪ Bʀᴏᴏ Yᴏᴜʀ Fɪʟᴇs Aʀᴇ Sᴇɴᴛᴇᴅ Pm (Pᴇʀsᴏɴᴀʟʟʏ) Cʜᴇᴄʜ Iᴛ 🌿, show_alert=True)
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
         except PeerIdInvalid:
