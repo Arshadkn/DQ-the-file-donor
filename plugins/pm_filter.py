@@ -61,7 +61,7 @@ async def pm_text(bot, message):
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
     if user_id in ADMINS: return # ignore admins
-    await message.reply_text("<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ᴍʏ ᴍᴏᴅᴇʀᴀᴛᴏʀs !</b>")
+    await message.reply_text("<b>⚠️ No need to send any message here.(ഇവിടെ ഒരു മെസ്സേജും അയക്കേണ്ടതില്ല). For Any Queries or Help (എന്തെങ്കിലും ചോദ്യങ്ങൾ അല്ലെങ്കിൽ സഹായത്തിന്).  👤 Contact: @Arskottu</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
@@ -575,7 +575,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
                 else:
                     await query.answer(f"⚠️  {query.from_user.first_name}, മറ്റുള്ളവർ റിക്വസ്റ്റ് ചെയ്ത മുവിയിൽ കുത്തി നോക്കാതെ. Broo വേണ്ടത് Broo റിക്വസ്റ്റ് ചെയ്യുക🤒.\n\n❕ Broo, Search Your Own File.Don't Click Others Request File's ❕", show_alert=True)
-                await query.answer('Bʀᴏᴏ Files ഞാൻ pmമിൽ അയിചിട്ടുണ്ട്🌿.\n\n👋Hᴀɪ Bʀᴏᴏ Yᴏᴜʀ Fɪʟᴇs Aʀᴇ Sᴇɴᴛᴇᴅ Pm (Pᴇʀsᴏɴᴀʟʟʏ) Cʜᴇᴄʜ Iᴛ 🌿', show_alert=True)
+                await query.answer('<b>👋 Hᴀɪ{query.from_user.first_name}Files ഞാൻ pmമിൽ അയിചിട്ടുണ്ട്🌿.\n\n👋Hᴀɪ Bʀᴏᴏ Yᴏᴜʀ Fɪʟᴇs Aʀᴇ Sᴇɴᴛᴇᴅ Pm (Pᴇʀsᴏɴᴀʟʟʏ) Cʜᴇᴄʜ Iᴛ 🌿</b>', show_alert=True)
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
         except PeerIdInvalid:
