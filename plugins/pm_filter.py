@@ -123,7 +123,7 @@ async def next_page(bot, query):
             btn = [
                 [
                     InlineKeyboardButton(
-                        text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                        text=f"📂[{get_size(file.file_size)}]🔖{file.file_name}", callback_data=f'files#{file.file_id}'
                     ),
                 ]
                 for file in files
@@ -269,7 +269,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("📂Yᴏᴜʀ SᴇʟᴇᴄᴛED Fɪʟᴇs📂", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("📂Fɪʟᴇs Sᴇɴᴛᴇᴅ ᴛᴏ Pᴍ 📂", url=f"https://t.me/{temp.U_NAME}")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -575,7 +575,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
                 else:
                     await query.answer(f"⚠️  {query.from_user.first_name}, മറ്റുള്ളവർ റിക്വസ്റ്റ് ചെയ്ത മുവിയിൽ കുത്തി നോക്കാതെ. Broo വേണ്ടത് Broo റിക്വസ്റ്റ് ചെയ്യുക🤒.\n\n❕ Broo, Search Your Own File.Don't Click Others Request File's ❕", show_alert=True)
-                await query.answer('Cʜᴇᴄᴋ PM, I ʜᴀᴠᴇ sᴇɴᴛ ғɪʟᴇs ɪɴ PM', show_alert=True)
+                await query.answer('{query.from_user.first_name} നിന്റെ Files ഞാൻ' pmമിൽ അയിചിട്ടുണ്ട്🌿.\n\n👋Hᴀɪ Bʀᴏᴏ Yᴏᴜʀ Fɪʟᴇs Aʀᴇ Sᴇɴᴛᴇᴅ Pm (Pᴇʀsᴏɴᴀʟʟʏ) Cʜᴇᴄʜ Iᴛ 🌿, show_alert=True)
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
         except PeerIdInvalid:
@@ -914,16 +914,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('✨ I ᴀᴍ Wᴏʀᴋɪɴɢ ᴏɴ ✨', url=f'https://t.me/team_Spidy')
                 ],[
                     InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('❄️ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ❄️', url=https://t.me/team_Spidy)
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('🔒 Cʟᴏsᴇ 🔒', callback_data='Close_page'),
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
