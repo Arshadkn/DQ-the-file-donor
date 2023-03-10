@@ -926,13 +926,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('🔒 Cʟᴏsᴇ 🔒', callback_data='close_pages'),
                   ]]
         
-        reply_markup = InlineKeyboardMarkup(buttons)
-        m=await query.message.reply_text("● ◌ ◌")
-        n=await m.edit("● ● ◌")
-        o=await n.edit("● ● ●")
-        await asyncio.sleep(1)
-        await o.delete()    
-        await query.message.edit_text(
+        reply_markup = InlineKeyboardMarkup(button
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
