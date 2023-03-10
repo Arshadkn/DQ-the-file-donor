@@ -925,7 +925,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('🔒 Cʟᴏsᴇ 🔒', callback_data='close_pages'),
                   ]]
-
+        
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
