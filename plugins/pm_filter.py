@@ -927,14 +927,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="◌ ◌ ◌"
         )
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(0.4)
         await query.message.edit_text(
             text="● ◌ ◌"
         )
         await query.message.edit_text(
             text="● ● ◌"
         )
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(0.4)
         await query.message.edit_text(
             text="● ● ●"
         )
