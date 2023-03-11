@@ -928,19 +928,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
+            text="◌ ◌ ◌"
+        )
+        await asyncio.sleep(0.5)
+        await query.message.edit_text(
+            text="● ◌ ◌"
         )
         await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
+            text="● ● ◌"
         )
+        await asyncio.sleep(0.5)
         await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
-        )
-        await query.message.edit_text(
-            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
+            text="● ● ●"
         )
         await client.edit_message_media(
             query.message.chat.id, 
@@ -968,6 +967,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text="◌ ◌ ◌"
+        )
+        await asyncio.sleep(0.5)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await asyncio.sleep(0.5)
+        await query.message.edit_text(
+            text="● ● ●"
         )
         await query.message.edit_text(
             text=script.ALLFILTER_TXT,
@@ -1041,6 +1054,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text="◌ ◌ ◌"
+        )
+        await asyncio.sleep(0.5)
+        await query.message.edit_text(
+            text="● ◌ ◌"
+        )
+        await query.message.edit_text(
+            text="● ● ◌"
+        )
+        await asyncio.sleep(0.5)
+        await query.message.edit_text(
+            text="● ● ●"
         )
         await query.message.edit_text(
             text=script.ABOUT_TXT,
