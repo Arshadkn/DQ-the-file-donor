@@ -980,7 +980,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="● ● ●"
         )
         await query.message.edit_text(
-            text=script.ALLFILTER_TXT,
+            text=script.FILTER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
