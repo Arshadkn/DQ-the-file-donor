@@ -575,7 +575,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
                 else:
                     await query.answer(f"⚠️  {query.from_user.first_name}, മറ്റുള്ളവർ റിക്വസ്റ്റ് ചെയ്ത മുവിയിൽ കുത്തി നോക്കാതെ. Broo വേണ്ടത് Broo റിക്വസ്റ്റ് ചെയ്യുക🤒.\n\n❕ Broo, Search Your Own File.Don't Click Others Request File's ❕", show_alert=True)
-                await query.answer('👋 Hᴀɪ{query.from_user.first_name}Files ഞാൻ pmമിൽ അയിചിട്ടുണ്ട്🌿.\n\n👋Hᴀɪ Bʀᴏᴏ Yᴏᴜʀ Fɪʟᴇs Aʀᴇ Sᴇɴᴛᴇᴅ Pm (Pᴇʀsᴏɴᴀʟʟʏ) Cʜᴇᴄʜ Iᴛ 🌿', show_alert=True)
+                await query.answer('👋 Hᴀɪ Files ഞാൻ pmമിൽ അയിചിട്ടുണ്ട്🌿.\n\n👋Hᴀɪ Bʀᴏᴏ Yᴏᴜʀ Fɪʟᴇs Aʀᴇ Sᴇɴᴛᴇᴅ Pm (Pᴇʀsᴏɴᴀʟʟʏ) Cʜᴇᴄʜ Iᴛ 🌿', show_alert=True)
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ !', show_alert=True)
         except PeerIdInvalid:
@@ -613,10 +613,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                  InlineKeyboardButton('🀄 Mᴏᴠɪᴇ Gʀᴏᴜᴘ 🀄', url=https://t.me/Dcenimaunverse),
+                  InlineKeyboardButton('㊗️Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ ㊗️', url=https://t.me/DCENIMAS)
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                  InlineKeyboardButton("📝Bᴏᴛ Oᴡɴᴇʀ📝", url="t.me/Arskottu")
                  ]
                 ]
             )
@@ -950,7 +950,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer(MSG_ALRT)
 
-    elif query.data == "allfilters":
+    elif query.data == "filters":
         buttons = [[
             InlineKeyboardButton('Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', callback_data='manuelfilter'),
             InlineKeyboardButton('Aᴜᴛᴏ FIʟᴛᴇʀ', callback_data='autofilter')
@@ -965,22 +965,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
+ 
         await query.message.edit_text(
-            text="◌ ◌ ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ● ●"
-        )
-        await query.message.edit_text(
-            text=script.ALLFILTERS_TXT,
+            text=script.FILTER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
