@@ -613,10 +613,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('🀄 Mᴏᴠɪᴇ Gʀᴏᴜᴘ 🀄', url=https://t.me/Dcenimaunverse),
-                  InlineKeyboardButton('㊗️Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ ㊗️', url=https://t.me/DCENIMAS)
+                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("📝Bᴏᴛ Oᴡɴᴇʀ📝", url="t.me/Arskottu")
+                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
                  ]
                 ]
             )
