@@ -613,10 +613,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                  InlineKeyboardButton('🀄 Mᴏᴠɪᴇ Gʀᴏᴜᴘ 🀄', url=https://t.me/Dcenimaunverse),
+                  InlineKeyboardButton('㊗️Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ ㊗️', url=https://t.me/DCENIMAS)
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                  InlineKeyboardButton("📝Bᴏᴛ Oᴡɴᴇʀ📝", url="t.me/Arskottu")
                  ]
                 ]
             )
@@ -950,7 +950,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.answer(MSG_ALRT)
 
-    elif query.data == "filters":
+    elif query.data == "filter":
         buttons = [[
             InlineKeyboardButton('Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', callback_data='manuelfilter'),
             InlineKeyboardButton('Aᴜᴛᴏ FIʟᴛᴇʀ', callback_data='autofilter')
@@ -967,7 +967,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
  
         await query.message.edit_text(
-            text=script.FILTER_TXT,
+            text=script.ALLFILTERS_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
