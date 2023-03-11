@@ -919,7 +919,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton(' • Hᴇʟᴘ • ', callback_data='help'),
                     InlineKeyboardButton(' • Aʙᴏᴜᴛ • ', Callback_data='about'),
                 ],[
-                    InlineKeyboardButton('👤 Oᴡɴᴇʀ, callback_data="owner_info"),
+                    InlineKeyboardButton('👤 Oᴡɴᴇʀ', callback_data="owner_info"),
                     
                 ]]
                     
