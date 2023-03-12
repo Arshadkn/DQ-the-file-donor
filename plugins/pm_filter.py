@@ -1072,20 +1072,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.message.edit_text(
-            text="◌ ◌ ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ● ●"
-        )
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters'),
@@ -1102,20 +1088,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.message.edit_text(
-            text="◌ ◌ ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ● ●"
-        )
+        
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='manuelfilter')
@@ -1146,20 +1119,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.message.edit_text(
-            text="◌ ◌ ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ● ●"
-        )
     elif query.data == "coct":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
@@ -1174,20 +1133,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.CONNECTION_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
-        await query.message.edit_text(
-            text="◌ ◌ ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ● ●"
         )
     elif query.data == "extra":
         buttons = [[
@@ -1205,21 +1150,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.message.edit_text(
-            text="◌ ◌ ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ● ●"
-        )
-    
     elif query.data == "store_file":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
