@@ -914,12 +914,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('🍄 •Aᴅᴅ• Mᴇ • Tᴏ YᴏᴜʀCʜᴀᴛ• 🍄', url=f'https://t.me/team_Spidy')
+                    InlineKeyboardButton('🍄 •Aᴅᴅ• Mᴇ • Tᴏ YᴏᴜʀCʜᴀᴛ• 🍄', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton(' • Hᴇʟᴘ • ', callback_data='help'),
-                    InlineKeyboardButton(' • Aʙᴏᴜᴛ • ', callback_data='about'),
+                    InlineKeyboardButton(' • H ᴇ ʟ ᴘ • ', callback_data='help'),
+                    InlineKeyboardButton(' • A ʙ ᴏ ᴜ ᴛ • ', callback_data='about'),
                 ],[
-                    InlineKeyboardButton('👤 Oᴡɴᴇʀ', callback_data="owner_info"),
+                    InlineKeyboardButton('👤 O ᴡ ɴ ᴇ ʀ', callback_data="owner_info"),
                     
                 ]]
                     
