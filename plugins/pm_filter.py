@@ -1039,16 +1039,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text="◌ ◌ ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
             text="● ◌ ◌"
         )
         await query.message.edit_text(
             text="● ● ◌"
         )
-        await asyncio.sleep(0.5)
         await query.message.edit_text(
             text="● ● ●"
         )
@@ -1232,33 +1227,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/creatorbeatz")
-                  ]]
+                  ]]           
+            reply_markup = InlineKeyboardMarkup(btn)
             await client.edit_message_media(
                 query.message.chat.id, 
                 query.message.id, 
                 InputMediaPhoto(random.choice(PICS))
             )
-            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text="● ◌ ◌ "
+            )
+            await query.message.edit_text(
+                text="● ● ◌ "
+            )
+            await query.message.edit_text(
+                text="● ● ● "
+            )       
             await query.message.edit_text(
                 text=(script.OWNER_INFO),
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
-            await query.message.edit_text(
-            text="◌ ◌ ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await asyncio.sleep(0.5)
-        await query.message.edit_text(
-            text="● ● ●"
-        )
-
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
